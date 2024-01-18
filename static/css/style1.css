@@ -1,0 +1,140 @@
+
+
+html {
+    font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+    html {
+        font-size: 1.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    html {
+        font-size: 1.75rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 2rem;
+    }
+
+    html {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+
+    @media (min-width: 768px) {
+        html {
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (min-width: 991px) {
+        html {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        html {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+}
+
+		header {
+			background-color: rgba(30, 30, 30, 1);
+			margin-top: 0rem;
+			display: block;
+
+		}
+        :root {
+  --gradient: linear-gradient(to left top, #DD2476 10%, #FF512F 90%) !important;
+}
+
+body {
+  background: #111 !important;
+}
+
+.card {
+  background: #222;
+  font-size: medium;
+  text-align: justify;
+  border: 1px solid #dd2476;
+  color: rgba(15, 15, 15, 0.8);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source:  var(--gradient) !important; 
+  text-decoration: none;
+  transition: all .4s ease;
+}
+
+.btn:hover, .btn:focus {
+      background: var(--gradient) !important;
+  -webkit-background-clip: none !important;
+  -webkit-text-fill-color: #fff !important;
+  border: 5px solid #fff !important; 
+  box-shadow: #222 1px 0 10px;
+  text-decoration: underline;
+}
+
+.nav-item:hover{
+    
+    border: 5px solid;
+  border-image-slice: 1;
+  background: var(--gradient) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  border-image-source:  var(--gradient) !important; 
+  text-decoration: none;
+  transition: all .2s ease;
+  
+}

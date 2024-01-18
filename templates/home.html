@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/style1.css">
+
+</head>
+
+<body>
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+</body>
+<!-- css files -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel='stylesheet' type='text/css' />
+<!-- bootstrap css -->
+<link href="{{ url_for('static', filename='css/style.css') }}" rel='stylesheet' type='text/css' />
+<!-- custom css -->
+<link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet"><!-- fontawesome css -->
+<!-- //css files -->
+<!-- <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/favicon.png?') }}"> -->
+
+
+<script type="text/JavaScript" src="{{ url_for('static', filename='scripts/cities.js') }}"></script>
+
+
+<!-- google fonts -->
+<link href="//fonts.googleapis.com/css?family=Thasadith:400,400i,700,700i&amp;subset=latin-ext,thai,vietnamese"
+    rel="stylesheet">
+<!-- //google fonts -->
+
+    <!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top" style="background-color:rgb(255, 255, 255)">
+		<div class="container">
+			<a class="navbar-brand" href="">
+				<img src="/static/css/logo-new.png" style="width: 100px; height: 70px" alt="">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="">Home
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+                    &nbsp;&nbsp;
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('disease') }}">Disease Prediction</a>
+					</li>
+                    &nbsp;&nbsp;
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('drug1') }}">Medication Advice</a>
+					</li>
+                     &nbsp;&nbsp;
+					
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+    <div class="container mx-auto mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+        <img src="/static/css/about us.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">About us</h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">GMR Varalakshmi CARE Hospital is a wing of GMR Varalakshmi Foundation, which is the CSR arm of the GMR group. It is a 200 bedded Multi speciality hospital inaugurated on 2nd April 2011 by the then Hon’ble Finance Minister Mr. Pranab Mukherjee and the Hon’ble Chief Minister of Andhra Pradesh Mr. Kiran Kumar Reddy.</p>
+             <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Read More</a>
+          
+        </div>
+        </div>
+          </div>    
+             <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/static/css/specialties.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Specialities</h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">Our hospital provides comprehensive, specialized care for patients with acute or chronic disorders. Part of our focus on providing high-quality acute care includes a rigorous focus on quality indicators such as outcomes, patient satisfaction, infection control, and patient safety.</p>
+          <a href="#" class="btn  mr-2"><i class="fas fa-link"></i> Read More</a>
+        
+        </div>
+        </div>
+          </div>    
+                <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <img src="/static/css/facilities.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Facilities</h5>
+              <h6 class="card-subtitle mb-2 text-muted"></h6>
+          <p class="card-text">The Security Services is another facility at the Hospital that ensures smooth flow of patients, attendants and all other visitors guiding them all along. The security at GMR Varalakshmi CARE Hospital are known for their integrity and have carefully returned many valuable assets of the patients.</p>
+          <a href="#" class="btn mr-2"><i class="fas fa-link"></i> Read More</a>
+     
+        </div>
+        </div>
+        </div>
+          
+    
+        </div>
+   
+
+</body>
+</html>
